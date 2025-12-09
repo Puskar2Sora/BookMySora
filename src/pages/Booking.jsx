@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 
 const PRICES = {
   VIP: 450,
@@ -13,6 +15,8 @@ const PRICES = {
 export default function Booking() {
   const { hallId, time } = useParams();
   const showtime = decodeURIComponent(time);
+  const navigate = useNavigate();
+
 
   const reservedSeats = ["A6", "A7", "C1-2"]; // demo
 
@@ -213,13 +217,29 @@ export default function Booking() {
           Total Amount:{" "}
           <span className="text-purple-300 font-bold">₹{totalPrice}</span>
         </p>
+<button
+  className="w-full py-4 rounded-xl text-xl font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition mt-4"
+  onClick={() => {
+    if (selected.length === 0) {
+      alert("Please select at least one seat");
+      return;
+    }
 
-        <button
-          className="w-full mt-5 py-3 rounded-lg font-bold
-          bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition"
-        >
-          Proceed to Payment
-        </button>
+    navigate("/payment", {
+      state: {
+        seats: selected,
+        amount: totalPrice,
+        movie: "Selected Movie",  // TEMP — replace later
+        theater: hallId,
+        time: showtime,
+      },
+    });
+  }}
+>
+  Proceed to Payment
+</button>
+
+
       </div>
     </div>
   );
