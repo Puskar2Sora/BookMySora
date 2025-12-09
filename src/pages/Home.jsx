@@ -26,7 +26,7 @@ const Home = () => {
       </motion.p>
 
       <motion.a
-        href="/movies"
+        href="/Movies"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}

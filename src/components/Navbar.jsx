@@ -21,7 +21,7 @@ const Navbar = () => {
             to="/"
             className="text-3xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text"
           >
-            🎬 MovieBooker
+           BookMySora
           </Link>
         </div>
 
