@@ -1,3 +1,5 @@
+<div align="center">
+<img src="assets/home.png" width="500" style="border-radius:12px; margin-bottom:20px"/></div>
 <h1 align="center">🎬 BookMySora – Movie Ticket Booking Platform</h1>
 
 <p align="center">
@@ -87,6 +89,30 @@
 
 <hr/>
 
+
+
+<hr/>
+
+<div align="center">
+
+  <h3>🏠 Home Page</h3>
+  <img src="assets/home.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
+
+  <h3>🎥 Movies Page</h3>
+  <img src="assets/movies.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
+
+  <h3>🎟 Seat Selection</h3>
+  <img src="assets/seats.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
+
+  <h3>💳 UPI Payment</h3>
+  <img src="assets/pay.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
+
+  <h3>🎫 Generated Ticket</h3>
+  <img src="assets/ticket.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
+
+</div>
+<hr/>
+
 <h2>📁 Folder Structure</h2>
 
 <pre>
@@ -139,27 +165,6 @@ VITE_FIREBASE_PROJECT_ID=yourProjectId
 <h3>4️⃣ Start Dev Server</h3>
 <pre>npm run dev</pre>
 
-<hr/>
-
-<div align="center">
-
-  <h3>🏠 Home Page</h3>
-  <img src="screenshots/home.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
-
-  <h3>🎥 Movies Page</h3>
-  <img src="screenshots/movies.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
-
-  <h3>🎟 Seat Selection</h3>
-  <img src="screenshots/seats.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
-
-  <h3>💳 UPI Payment</h3>
-  <img src="screenshots/payment.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
-
-  <h3>🎫 Generated Ticket</h3>
-  <img src="screenshots/ticket.png" width="700" style="border-radius:12px; margin-bottom:20px"/>
-
-</div>
-<hr/>
 
 <h2>📦 Build for Production</h2>
 <pre>npm run build</pre>
